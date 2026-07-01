@@ -1,0 +1,208 @@
+---
+title: Fix Common StudyFlow Issues and Error Messages
+sidebarTitle: Troubleshooting
+description: Step-by-step fixes for the most common StudyFlow problems — login failures, photo upload errors, slow AI responses, sessions not saving, and more.
+---
+
+Most StudyFlow issues are quick to resolve with a few targeted steps. This guide covers the most common problems students run into, what causes them, and exactly how to fix them. Work through the steps in order for each issue — they're arranged from simplest to most thorough.
+
+---
+
+## Can't Log In / Password Not Working
+
+Your login might fail because of an incorrect password, an unverified email address, a browser cookie conflict, or a temporary account lock after multiple failed attempts.
+
+<Steps>
+  <Step title="Double-check your email address">
+    Make sure you're entering the exact email address you registered with. If you signed up using Google or Apple, you may not have a password — use the **Continue with Google** or **Continue with Apple** button instead of the email/password form.
+  </Step>
+  <Step title="Reset your password">
+    On the login screen, click **Forgot password?** and enter your email. You'll receive a reset link within a few minutes. Check your spam or junk folder if it doesn't arrive. The reset link is valid for 30 minutes.
+  </Step>
+  <Step title="Clear your browser cache and cookies">
+    Stale session data can prevent login from completing. In Chrome, go to **Settings → Privacy and security → Clear browsing data**, select **Cookies and other site data** and **Cached images and files**, then try logging in again.
+  </Step>
+  <Step title="Try a different browser or incognito mode">
+    Open an incognito or private window and attempt to log in at [app.studyflow.app](https://app.studyflow.app). If this works, a browser extension is likely interfering — try disabling extensions one at a time to identify the culprit.
+  </Step>
+  <Step title="Check for an account lock">
+    After several failed login attempts, StudyFlow temporarily locks the account for 15 minutes as a security measure. Wait 15 minutes before trying again, then use the **Forgot password?** flow to set a fresh password.
+  </Step>
+</Steps>
+
+---
+
+## Photo Upload Not Working or Giving Poor Results
+
+Photo upload issues are usually caused by an unsupported file format, a file that's too large, poor image quality, or a browser that lacks camera access permissions.
+
+<Steps>
+  <Step title="Check the file format and size">
+    StudyFlow accepts **JPG, PNG, HEIC, and WebP** images up to **10 MB** in size. If your file is a PDF or a screenshot in a different format, convert it to JPG or PNG first. Files over 10 MB should be compressed before uploading.
+  </Step>
+  <Step title="Improve image quality">
+    Ensure the photo is well-lit with no shadows across the text, held steady (not blurred), and that all relevant text is fully within the frame. Crop the image to show just the question you need help with before uploading — this significantly improves recognition accuracy.
+  </Step>
+  <Step title="Grant camera or file access permissions">
+    If the upload button does nothing, your browser may be blocking access. In Chrome, click the **padlock icon** in the address bar, find **Camera** and **Files**, and set both to **Allow**. On iOS Safari, go to **Settings → Safari → Camera** and set it to **Allow**.
+  </Step>
+  <Step title="Reload the page and try again">
+    Occasionally a failed upload leaves the uploader in a stuck state. Refresh the page (Ctrl+R / Cmd+R), start a new session, and attempt the upload again.
+  </Step>
+  <Step title="Use the mobile app for best results">
+    If uploads are consistently poor from a laptop, try the StudyFlow mobile app, which uses your phone's native camera with optimised capture settings for text recognition.
+  </Step>
+</Steps>
+
+---
+
+## AI Response Is Slow or Not Appearing
+
+Slow or missing AI responses are most often caused by high server load, a weak internet connection, or a browser tab that has become unresponsive.
+
+<Steps>
+  <Step title="Check your internet connection">
+    Open another website to confirm you're online. If your connection is slow or intermittent, StudyFlow's AI response streaming may stall. Moving closer to your router or switching from Wi-Fi to a wired connection can help.
+  </Step>
+  <Step title="Wait up to 30 seconds">
+    During peak study periods, response times can increase slightly. If the typing indicator is visible, the response is on its way — give it up to 30 seconds before taking further action.
+  </Step>
+  <Step title="Refresh the session">
+    If no response arrives after 30 seconds and the typing indicator has disappeared, click the **Retry** button that appears below the message, or refresh the page. Your session and messages are saved automatically, so you won't lose any progress.
+  </Step>
+  <Step title="Check the StudyFlow status page">
+    Visit [status.studyflow.app](https://status.studyflow.app) to see if there is a known service disruption. If an incident is listed, the team is already working on it and updates will be posted there.
+  </Step>
+  <Step title="Disable VPN or proxy">
+    VPNs and proxies can add latency or be blocked by network-level filters. Try temporarily disabling your VPN and retrying the session.
+  </Step>
+</Steps>
+
+---
+
+## Quiz or Flashcard Not Generating
+
+If clicking **Generate Quiz** or **Create Flashcards** produces an error or nothing happens, the cause is usually insufficient session content, a topic that's too vague, or a temporary generation issue.
+
+<Steps>
+  <Step title="Make sure there is enough content in your session">
+    Quizzes and flashcard sets need sufficient material to work from. If your session has fewer than two or three exchanges, add more detail to your notes or ask the AI a few more questions on the topic before generating.
+  </Step>
+  <Step title="Be specific about the topic">
+    Vague prompts like "science" can confuse the generator. Try selecting a specific portion of your session text and using the **Generate from selection** option, or type a focused topic like "mitosis and meiosis cell division" into the quiz generator prompt field.
+  </Step>
+  <Step title="Retry the generation">
+    Click the generate button again — transient API errors usually resolve on the second attempt. If you see a specific error code, note it down for the support team.
+  </Step>
+  <Step title="Start a fresh session for the topic">
+    If generation continues to fail in an existing session, create a new session, paste in your notes or ask the AI to summarise the topic, and then try generating from that new session.
+  </Step>
+</Steps>
+
+---
+
+## Session Not Saving
+
+StudyFlow saves sessions automatically, but if you notice a session missing or content not persisting, here's how to investigate.
+
+<Warning>
+  If you're using a private or incognito browser window, sessions **cannot** be saved to your account — all session data will be lost when you close the window. Always use a normal browser window and make sure you are signed in before starting a session you want to keep.
+</Warning>
+
+<Steps>
+  <Step title="Confirm you are signed in">
+    Check the top-right corner of the app for your profile avatar. If you see a **Log in** button instead, you're browsing as a guest and sessions are not being saved. Sign in and your previous sessions will reappear in the sidebar.
+  </Step>
+  <Step title="Check your session storage limit">
+    Free accounts can store up to 20 sessions. If you're at the limit, older sessions may be archived. Delete sessions you no longer need from **My Sessions**, or upgrade to StudyFlow Plus for unlimited storage.
+  </Step>
+  <Step title="Look for the session in All Sessions">
+    Sessions sometimes appear under **All Sessions** in the sidebar rather than your current folder view. Use the search bar at the top of the sidebar to search by keyword if you can't find a specific session.
+  </Step>
+  <Step title="Export critical sessions immediately">
+    If you suspect a saving issue, export your current session as a PDF right away via **Session menu → Export as PDF**. This ensures you have a local copy while you investigate.
+  </Step>
+</Steps>
+
+---
+
+## Page Not Loading / Blank Screen
+
+A blank or frozen page is typically caused by a failed JavaScript load, a cached bad response, or a browser compatibility issue.
+
+<Steps>
+  <Step title="Hard-refresh the page">
+    Press **Ctrl+Shift+R** on Windows/Linux or **Cmd+Shift+R** on Mac to force a full reload, bypassing the cache. On mobile, pull down on the page to refresh.
+  </Step>
+  <Step title="Clear site data for StudyFlow">
+    In Chrome, go to **Settings → Privacy and security → Clear browsing data** and clear cached files and cookies for the last hour. Then navigate back to [app.studyflow.app](https://app.studyflow.app).
+  </Step>
+  <Step title="Disable browser extensions">
+    Ad blockers, script blockers, and privacy extensions can prevent StudyFlow from loading correctly. Open an incognito window (where extensions are disabled by default) and try again. If the page loads, disable your extensions one at a time to find the conflict.
+  </Step>
+  <Step title="Try a different browser">
+    If the issue persists in one browser, test in another (e.g. switch from Safari to Chrome). This helps determine whether the problem is browser-specific.
+  </Step>
+  <Step title="Check for browser updates">
+    StudyFlow requires a modern browser. Go to your browser's **Help → About** menu to check for and install any pending updates, then restart the browser and try again.
+  </Step>
+</Steps>
+
+---
+
+## StudyFlow Looks Broken on Mobile
+
+Layout issues on mobile — such as overlapping elements, cut-off text, or buttons that are hard to tap — are usually caused by browser zoom settings, an outdated app version, or an unsupported mobile browser.
+
+<Steps>
+  <Step title="Reset your browser zoom level">
+    Pinch-to-zoom on a browser page can break responsive layouts. Double-tap the screen to reset zoom, or in your mobile browser settings, reset the page zoom to 100%.
+  </Step>
+  <Step title="Update the StudyFlow app">
+    Open the App Store or Google Play, search for StudyFlow, and install any available update. We release fixes for layout issues regularly and keeping the app current ensures you have the best experience.
+  </Step>
+  <Step title="Switch to the StudyFlow native app">
+    If you're using a mobile browser and experiencing layout issues, try the native iOS or Android app instead — it's optimised for smaller screens and touch input.
+  </Step>
+  <Step title="Check your device's display settings">
+    Very large text sizes set in your phone's accessibility settings can cause UI elements to overlap. Try temporarily reducing the system font size under **Settings → Display → Font size** to see if that resolves the issue.
+  </Step>
+  <Step title="Report the issue with a screenshot">
+    If the layout remains broken, take a screenshot and send it to [support@studyflow.app](mailto:support@studyflow.app) along with your device model and OS version. This helps us identify and fix display bugs quickly.
+  </Step>
+</Steps>
+
+---
+
+## I Found an Incorrect AI Answer
+
+The AI can occasionally make mistakes, and we take accuracy seriously. Here's what to do if you spot an error.
+
+<Steps>
+  <Step title="Double-check with a trusted source">
+    Before reporting, verify the answer against your textbook, class notes, or a trusted educational resource. Context matters — the AI's answer may be correct for a different interpretation of the question.
+  </Step>
+  <Step title="Flag the response in the session">
+    Click the **thumbs-down icon** beneath the AI's message and select **Incorrect information** from the dropdown. You can add a brief note explaining what you believe is wrong. This sends the response directly to our content quality team for review.
+  </Step>
+  <Step title="Ask the AI to try again">
+    Type *"I think that answer might be wrong — can you reconsider and try again?"* in the chat. The AI will re-evaluate its response, and in many cases will correct itself or provide a more nuanced answer.
+  </Step>
+  <Step title="Contact support for subject-critical errors">
+    If the error relates to exam content or could cause real harm if relied upon, please email [support@studyflow.app](mailto:support@studyflow.app) with the session link (copied from **Session menu → Share link**) and a description of the issue. Our team will investigate and update the AI's knowledge if needed.
+  </Step>
+</Steps>
+
+<Note>
+  Flagging incorrect answers directly helps us improve StudyFlow for every student. The more specific your feedback, the faster our team can review and correct the issue.
+</Note>
+
+---
+
+## Still Need Help?
+
+If none of the steps above resolved your issue, our support team is here to help. Include a description of the problem, your device and browser (or app version), and any error messages you saw — this helps us resolve your issue as quickly as possible.
+
+<Card title="Contact StudyFlow Support" icon="envelope" href="mailto:support@studyflow.app">
+  Email us at **support@studyflow.app** — we typically respond within one business day.
+</Card>
